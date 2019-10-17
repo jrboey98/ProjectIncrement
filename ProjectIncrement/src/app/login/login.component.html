@@ -1,0 +1,18 @@
+<form (ngSubmit)="loginForm()">
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="Email" 
+              [(ngModel)]="login.email" 
+              name="email">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="Password" 
+              [(ngModel)]="login.password" 
+              name="password">
+    </ion-input>
+  </ion-item>
+  <ion-button expand="block" type="submit">Login</ion-button>
+  <ion-button expand="block" routerLink="/register" routerDirection="root">Register</ion-button>
+</form>
