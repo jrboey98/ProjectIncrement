@@ -14,12 +14,19 @@
       </ion-input>
     </ion-item>
     <ion-item>
-        <ion-label>Confirm Password</ion-label>
-        <ion-input type="Password" 
-                  [(ngModel)]="register.confirmPassword" 
-                  name="confirmPassword">
-        </ion-input>
-      </ion-item>
+      <ion-label>Confirm Password</ion-label>
+      <ion-input type="Password" 
+                [(ngModel)]="register.confirmPassword" 
+                name="confirmPassword">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>User Handle</ion-label>
+      <ion-input type="text" 
+                [(ngModel)]="register.userHandle" 
+                name="userHandle">
+      </ion-input>
+    </ion-item>
     <ion-button expand="block" type="submit">Register</ion-button>
     <ion-button expand="block" routerLink="/login" routerDirection="root">Back to login</ion-button>
   </form>
