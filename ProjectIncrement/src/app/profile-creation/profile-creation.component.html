@@ -1,0 +1,26 @@
+<ion-item>
+  <span>
+    Lets set up your profile
+  </span>
+</ion-item>
+<form (ngSubmit)="profileCreationForm()">
+  <ion-item>
+    <span>Your username can be whatever you want it to be (appropriateness permitting, obviously).</span>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" 
+              [(ngModel)]="creation.username" 
+              name="username">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <span>Write something about yourself here.</span>
+    <ion-label>Motto</ion-label>
+    <ion-input type="text" 
+              [(ngModel)]="creation.motto" 
+              name="motto">
+    </ion-input>
+  </ion-item>
+  <span>Profile picture coming soon.</span>
+  <ion-button expand="block" type="submit">Submit</ion-button>
+  <ion-button expand="block" routerLink="" routerDirection="root">Back to login</ion-button>
+</form>

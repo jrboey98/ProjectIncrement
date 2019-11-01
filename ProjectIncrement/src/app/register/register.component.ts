@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit {
       userHandle: this.register.userHandle
     }).then(() => {
       console.log("User created successfully");
-      this.router.navigate(['login']);
+      this.router.navigate(['profile-creation']);
     }).catch((error) => {
       console.log("User registration failed: " + error);
     });
